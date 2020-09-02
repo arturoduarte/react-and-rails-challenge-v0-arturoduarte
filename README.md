@@ -33,7 +33,7 @@ Tip: In order to recompile the changes in the React app - while coding - you can
 
 ## 🦶 Steps
 
-- Fork this repo
+- Clone this repo (Github Classroom will do it for you)
 - Complete the code by implementing the missing features
 - Push your repo
 - Create a pull request
