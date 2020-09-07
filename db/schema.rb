@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_26_170849) do
+ActiveRecord::Schema.define(version: 2020_09_07_001138) do
 
   create_table "jobs", force: :cascade do |t|
     t.string "slug"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2020_08_26_170849) do
     t.integer "search_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "favorite", default: false
     t.index ["search_id"], name: "index_jobs_on_search_id"
   end
 

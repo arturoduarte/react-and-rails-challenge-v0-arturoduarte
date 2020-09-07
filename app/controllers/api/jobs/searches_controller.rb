@@ -17,15 +17,15 @@ module API
       end
 
       # POST /api/jobs/searches?query=Rails
-      def create
-        search = Search.create!(query: params[:query])
+      def create                
+        search = Search.create!(query: params[:query])        
         render json: ::SearchSerializer.new(search)
       end
 
       # DELETE /api/jobs/searches/:id
-      def destroy
+      def destroy        
         @search.destroy!
-        head :ok
+        head :ok        
       end
 
       private def set_search

@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     scope module: :jobs do
       scope :jobs do
         resources :searches
+        resources :favorites
       end
     end
     resources :jobs
